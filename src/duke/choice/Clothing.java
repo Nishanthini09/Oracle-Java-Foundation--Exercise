@@ -12,9 +12,17 @@ public class Clothing {
     private String descrption;
     private double price;
     private String size = "M";
+
+    public Clothing(String descrption, double price,String aSize) {
+        this.descrption = descrption;
+        this.price = price;
+        size = aSize;
+    }
     
-    private final double min_price = 10.0;
-    private final double tax = 0.2;
+    
+    
+    public final static double min_price = 10.0;
+    public final static double tax = 0.2;
 
     public String getDescrption() {
         return descrption;

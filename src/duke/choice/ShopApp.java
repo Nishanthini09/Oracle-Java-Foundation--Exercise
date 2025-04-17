@@ -24,26 +24,26 @@ public class ShopApp {
         System.out.println("Customer name : " + c1.getName());
 //        c1.setSize("S");
 
-        Clothing item1 = new Clothing();
-        Clothing item2 = new Clothing();
+        Clothing item1 = new Clothing("Blue Jacket",20.9,"M");
+        Clothing item2 = new Clothing("Orange T-Shirt",10.5,"S");
 
-        Clothing item[] = {item1, item2, new Clothing(), new Clothing()};
+        Clothing item[] = {item1, item2, new Clothing("Green Scarf",5,"S"), new Clothing("Blue T-Shirt",10.5,"S")};
 
-        item1.setDescrption("Blue Jacket");
-        item1.setPrice(20.9);
-        item1.setSize("M");
-
-        item2.setDescrption("Orange T-Shirt");
-        item2.setPrice(10.5);
-        item2.setSize("S");
-
-        item[2].setDescrption("Green Scarf");
-        item[2].setPrice(5);
-        item[2].setSize("S");
-
-        item[3].setDescrption("Blue T-Shirt");
-        item[3].setPrice(10.5);
-        item[3].setSize("S");
+//        item1.setDescrption("Blue Jacket");       //these are called from paramter constructor
+//        item1.setPrice(20.9);
+//        item1.setSize("M");
+//
+//        item2.setDescrption("Orange T-Shirt");
+//        item2.setPrice(10.5);
+//        item2.setSize("S");
+//
+//        item[2].setDescrption("Green Scarf");
+//        item[2].setPrice(5);
+//        item[2].setSize("S");
+//
+//        item[3].setDescrption("Blue T-Shirt");
+//        item[3].setPrice(10.5);
+//        item[3].setSize("S");
 
 //        System.out.println("Item1 : "+item1.descrption+","+item1.price+","+item1.size);
 //        System.out.println("Item2 : "+item2.descrption+","+item2.price+","+item2.size);
@@ -74,6 +74,8 @@ public class ShopApp {
         c1.addItem(item);
 //        c1.setSize(measurement);
         System.out.println("Size : " + c1.getSize());
+        System.out.println("Min_price:"+Clothing.min_price);     //Static variable access by class name
+        System.out.println("Tax : "+Clothing.tax);
 
 //       for(Clothing items : item){
 //            System.out.println("Item : "+items.descrption+","+items.price+","+items.size);

@@ -16,12 +16,13 @@ public class ShopApp {
     public static void main(String[] args) {
         double tax = 0.2;
         double total = 0.0;
+        int measurement = 3;
         System.out.println("Welcome kanna!!");
 
-        Customer c1 = new Customer();
-        c1.setName("Pinky");
+        Customer c1 = new Customer("Pinky",measurement);
+//        c1.setName("Pinky");
         System.out.println("Customer name : " + c1.getName());
-        c1.setSize("S");
+//        c1.setSize("S");
 
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
@@ -69,9 +70,9 @@ public class ShopApp {
 //                c1.setSize("X");
 //                break;
 //        }
-        int measurement = 3;
+        
         c1.addItem(item);
-        c1.setSize(measurement);
+//        c1.setSize(measurement);
         System.out.println("Size : " + c1.getSize());
 
 //       for(Clothing items : item){

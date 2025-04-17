@@ -99,7 +99,22 @@ public class ShopApp {
             System.out.println("Items is : " + items.getDescrption());
         }
 //        System.out.println("Total : " + c1.getTotalClothingCost());
-
+   
+//Practice 7
+        int avg = 0;
+        int count = 0;
+        for (Clothing items : c1.getItem()){
+            if(items.getSize().equals("L")){
+                count++;
+                avg+=items.getPrice();
+            }
+        }
+        try{
+            avg = avg/count;
+            System.out.println("Average : "+avg+" ,Count : "+count);
+        }
+        catch(ArithmeticException e){
+            System.out.println("Don't Divide by zero");
+        }
     }
-
 }

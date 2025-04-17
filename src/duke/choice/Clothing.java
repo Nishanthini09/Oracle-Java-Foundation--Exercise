@@ -19,8 +19,6 @@ public class Clothing {
         size = aSize;
     }
     
-    
-    
     public final static double min_price = 10.0;
     public final static double tax = 0.2;
 
